@@ -7,6 +7,19 @@
     
 }
 
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
 .accessibility-label {
 	position:absolute;
 	left:-999px;
@@ -60,8 +73,8 @@ form input {
     margin-left: -5px;
 }
 
-form input::placeholder {
-    color: black;
+form input {
+    color:black;
 }
 
 form h1 {
@@ -102,6 +115,7 @@ form button:hover {
 
  .filters h3 {
     margin-right: 20px;
+    padding: 30px;
 }
 
 .button-filter p {
@@ -112,18 +126,18 @@ form button:hover {
 
 .button-filter {
     font-weight: bold;
-    border: 1px solid transparent;
+    border: 1px solid darkgray;
     border-radius: 30px;
     border-left: none;
 }
 
 .button-filter:hover{
-    background-color:lightgrey;
-    box-shadow: 0 0 8px blue;
+    background-color:lightblue;
+    box-shadow: 0 0 8px darkgray;
 }
   
 .button-filter .fa-solid {
-    background-color:#DEEBFF;
+    background-color:transparent;
     border-radius: 30px;
 }
 
@@ -146,6 +160,7 @@ form button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    padding: 30px;
 }  
 
 .fa-solid.fa-info {
